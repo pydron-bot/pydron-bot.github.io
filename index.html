@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>deeek.org</title>
+    <meta name="description" content="Projects by deeek." />
+    <meta name="theme-color" content="#111214" />
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #111214;
+        --fg: #f3efe2;
+        --muted: #a7a39a;
+        --accent: #ff3d8b;
+        --accent-2: #2ee6ff;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        min-height: 100svh;
+        display: grid;
+        place-items: center;
+        padding: max(24px, env(safe-area-inset-top)) 16px max(24px, env(safe-area-inset-bottom));
+        background: var(--bg);
+        color: var(--fg);
+        font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+      }
+      main { width: min(560px, 100%); }
+      h1 { font-size: clamp(36px, 9vw, 56px); margin: 0 0 4px; letter-spacing: -0.02em; }
+      p { color: var(--muted); margin: 0 0 32px; }
+      a.project {
+        display: block;
+        padding: 20px 22px;
+        border-radius: 16px;
+        text-decoration: none;
+        color: var(--fg);
+        background: linear-gradient(135deg, rgb(255 61 139 / 0.18), rgb(46 230 255 / 0.12));
+        border: 1px solid rgb(255 255 255 / 0.12);
+      }
+      a.project:hover, a.project:focus-visible { border-color: var(--accent-2); outline: none; }
+      .name { font-size: 24px; font-weight: 800; font-style: italic; letter-spacing: 0.02em; }
+      .blurb { color: var(--muted); margin-top: 4px; }
+      footer { margin-top: 32px; font-size: 13px; color: var(--muted); }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>deeek.org</h1>
+      <p>Projects. A proper landing page is on the way.</p>
+      <a class="project" href="/curbside/">
+        <div class="name">CURBSIDE</div>
+        <div class="blurb">Top-down open-world driving and chaos in your browser. Phone, keyboard or gamepad.</div>
+      </a>
+      <footer>More projects coming soon.</footer>
+    </main>
+  </body>
+</html>
